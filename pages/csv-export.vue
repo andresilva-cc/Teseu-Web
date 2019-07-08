@@ -7,11 +7,14 @@
             <span class="headline"><v-icon medium left>archive</v-icon>Exportação de CSV</span>
           </v-card-title>
           <v-card-text>
-            <span>Utilize esta função para exportar as ocorrências em formato CSV. Você pode escolher uma data específica, ou caso não selecione nenhuma, será exportada a mais recente.</span>
+            <span>Utilize esta função para exportar as ocorrências em formato CSV. Você pode filtrar as ocorrências pela data inicial e data final.</span>
             <v-form class="mt-3">
               <v-layout row wrap>
-                <v-flex xs12 md6>
-                  <v-text-field prepend-icon="event" label="Data"></v-text-field>
+                <v-flex xs12 md6 lg3>
+                  <v-text-field prepend-icon="event" label="Data inicial"></v-text-field>
+                </v-flex>
+                <v-flex xs12 md6 lg3>
+                  <v-text-field prepend-icon="event" label="Data final"></v-text-field>
                 </v-flex>
                 <v-flex xs12 class="mt-3">
                   <v-btn color="blue" class="white--text"><v-icon left>save_alt</v-icon>Exportar</v-btn>

@@ -37,6 +37,7 @@ export default {
         { icon: 'home', title: 'Início', to: '/' },
         { icon: 'map', title: 'Mapa', to: '/map' },
         { icon: 'widgets', title: 'Documentação da API', to: '/api-docs' },
+        { icon: 'vpn_key', title: 'Token da API', to: '/api-token' },
         { icon: 'archive', title: 'Exportação de CSV', to: '/csv-export' },
       ]
     }
