@@ -3,7 +3,7 @@
     
     <v-navigation-drawer app clipped permanent class="grey lighten-5 elevation-6">
       <v-list>
-        <v-list-tile v-for="(item, i) in items" :key="i" :to="item.to" router exact>
+        <v-list-tile v-for="(item, i) in items" :key="i" :to="item.to" router exact :disabled="item.disabled">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>
@@ -34,12 +34,12 @@ export default {
   data() {
     return {
       items: [
-        { icon: 'home', title: 'Início', to: '/' },
-        { icon: 'map', title: 'Mapa', to: '/map' },
-        { icon: 'widgets', title: 'Documentação da API', to: '/api-docs' },
-        { icon: 'vpn_key', title: 'Token da API', to: '/api-token' },
-        { icon: 'archive', title: 'Exportação de CSV', to: '/csv-export' },
-        { icon: 'description', title: 'Termos de Uso', to: '/terms-of-use' }
+        { icon: 'home', title: 'Início', to: '/', disabled: false },
+        { icon: 'map', title: 'Mapa', to: '/map', disabled: true },
+        { icon: 'widgets', title: 'Documentação da API', to: '/api-docs', disabled: true },
+        { icon: 'vpn_key', title: 'Token da API', to: '/api-token', disabled: true },
+        { icon: 'archive', title: 'Exportação de CSV', to: '/csv-export', disabled: true },
+        { icon: 'description', title: 'Termos de Uso', to: '/terms-of-use', disabled: false }
       ]
     }
   }
