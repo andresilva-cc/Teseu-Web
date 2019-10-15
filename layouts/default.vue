@@ -36,7 +36,7 @@ export default {
       items: [
         { icon: 'home', title: 'Início', to: '/', disabled: false },
         { icon: 'map', title: 'Mapa', to: '/map', disabled: true },
-        { icon: 'widgets', title: 'Documentação da API', to: '/api-docs', disabled: true },
+        { icon: 'widgets', title: 'Documentação da API', to: '/api-docs', disabled: false },
         { icon: 'vpn_key', title: 'Token da API', to: '/api-token', disabled: false },
         { icon: 'archive', title: 'Exportação de CSV', to: '/csv-export', disabled: true },
         { icon: 'description', title: 'Termos de Uso', to: '/terms-of-use', disabled: false }
