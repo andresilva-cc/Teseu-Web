@@ -1,8 +1,14 @@
+require('dotenv').config()
+
 import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
 import pkg from './package'
 
 export default {
   mode: 'universal',
+
+  env: {
+    baseURL: process.env.BASE_URL || 'https://api.teseu.app'
+  },
 
   /*
   ** Headers of the page
@@ -47,6 +53,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/dotenv',
   ],
 
   /*
