@@ -1,7 +1,7 @@
 <template>
   <v-app>
     
-    <v-navigation-drawer app clipped permanent class="grey lighten-5 elevation-6">
+    <v-navigation-drawer app temporary v-model="drawer" class="grey lighten-5 elevation-6">
       <v-list>
         <v-list-tile v-for="(item, i) in items" :key="i" :to="item.to" router exact :disabled="item.disabled">
           <v-list-tile-action>
@@ -14,7 +14,8 @@
       </v-list>
     </v-navigation-drawer>
     
-    <v-toolbar clipped-left color="blue" dark fixed app>
+    <v-toolbar clipped-left color="blue" dark fixed app>  
+      <v-toolbar-side-icon @click="drawer = !drawer" class="white--text"></v-toolbar-side-icon>
       <v-toolbar-title>Teseu Web</v-toolbar-title>
     </v-toolbar>
     
@@ -33,6 +34,8 @@
 export default {
   data() {
     return {
+      drawer: false,
+
       items: [
         { icon: 'home', title: 'Início', to: '/', disabled: false },
         { icon: 'map', title: 'Mapa', to: '/map', disabled: true },
