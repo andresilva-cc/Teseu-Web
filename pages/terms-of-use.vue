@@ -41,7 +41,7 @@
               </li>
               <li>Para utilizar a funcionalidade de notificações em tempo real com base em sua localização, precisamos do acesso aos serviços de localização do seu dispositivo, os quais serão solicitados na primeira inicialização do aplicativo.
                 <ol type="a">
-                  <li>A sua localização será enviada ao servidor de tempo em tempo, porém não será armazenada em nosso banco de dados, servindo apenas para obter as ocorrências próximas de sua localização.</li>
+                  <li>A sua localização será enviada ao servidor de tempo em tempo, e apenas a última localização enviada será armazenada, servindo apenas para obter as ocorrências próximas de sua localização.</li>
                   <li>A sua localização não é compartilhada com nenhum usuário ou terceiro.</li>
                   <li>Caso você queira desativar esta funcionalidade, desative os alertas nas configurações do aplicativo.</li>
                 </ol>
